@@ -1,9 +1,7 @@
-
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { createServer as createViteServer } from 'vite';
 import dotenv from 'dotenv';
 import apiRoutes from './routes';
 
@@ -24,6 +22,8 @@ async function startServer() {
 
   // Vite Middleware (Development)
   if (process.env.NODE_ENV !== "production") {
+    // 动态按需导入 Vite，避免生产环境报错
+    const { createServer: createViteServer } = await import('vite');
     const vite = await createViteServer({
       root: path.resolve(__dirname, '..'),
       server: { middlewareMode: true },
@@ -45,4 +45,3 @@ async function startServer() {
 }
 
 startServer();
-
