@@ -1,6 +1,4 @@
-
 import crypto from 'crypto';
-import { HERBS_DATA } from '../src/constants/herbs';
 
 // Mock Database State
 export const usersDB: any[] = [];
