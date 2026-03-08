@@ -1,0 +1,135 @@
+
+import { Herb } from '../types';
+
+export const HERBS_DATA: Herb[] = [
+  {
+    id: 1,
+    name: "人参",
+    pinyin: "Ren Shen",
+    category: "补气药",
+    nature: "甘、微苦，微温",
+    channels: ["脾", "肺", "心"],
+    description: "人参被称为'百草之王'，是著名的补气中药。",
+    efficacy: "大补元气，复脉固脱，补脾益肺，生津养血，安神益智。",
+    usage: "3~9g，另煎兑服；也可研末吞服。",
+    contraindications: "实证、热证而正气不虚者忌服。反莱菔子，畏五灵脂。",
+    imageUrl: "/images/herbs/renshen.jpg" // 本地图片路径，请将图片放入 public/images/herbs/ 目录下
+  },
+  {
+    id: 2,
+    name: "枸杞子",
+    pinyin: "Gou Qi Zi",
+    category: "补阴药",
+    nature: "甘，平",
+    channels: ["肝", "肾"],
+    description: "传统的滋补佳品，药食同源。",
+    efficacy: "滋补肝肾，益精明目。",
+    usage: "6~12g。",
+    contraindications: "外感实热、脾虚泄泻者慎服。",
+    imageUrl: "/images/herbs/gouqizi.jpg"
+  },
+  {
+    id: 3,
+    name: "当归",
+    pinyin: "Dang Gui",
+    category: "补血药",
+    nature: "甘、辛，温",
+    channels: ["肝", "心", "脾"],
+    description: "补血第一药，妇科圣药。",
+    efficacy: "补血活血，调经止痛，润肠通便。",
+    usage: "6~12g。",
+    contraindications: "湿盛中满，大便泄泻者忌服。",
+    imageUrl: "/images/herbs/danggui.jpg"
+  },
+  {
+    id: 4,
+    name: "黄芪",
+    pinyin: "Huang Qi",
+    category: "补气药",
+    nature: "甘，微温",
+    channels: ["脾", "肺"],
+    description: "常用的补气药，常与人参同用。",
+    efficacy: "补气升阳，固表止汗，利水消肿，生津养血，行滞通痹，托毒排脓，敛疮生肌。",
+    usage: "9~30g。",
+    contraindications: "表实邪盛，气滞湿阻，食积停滞，阴虚阳亢，痈疽初起或溃后热毒尚盛等实证忌用。",
+    imageUrl: "/images/herbs/huangqi.jpg"
+  },
+  {
+    id: 5,
+    name: "菊花",
+    pinyin: "Ju Hua",
+    category: "解表药",
+    nature: "辛、甘、苦，微寒",
+    channels: ["肺", "肝"],
+    description: "常用清热解毒药材。",
+    efficacy: "疏散风热，平抑肝阳，清肝明目，清热解毒。",
+    usage: "5~10g。",
+    contraindications: "气虚胃寒，食少泄泻者慎服。",
+    imageUrl: "/images/herbs/juhua.jpg"
+  },
+  {
+    id: 6,
+    name: "甘草",
+    pinyin: "Gan Cao",
+    category: "补气药",
+    nature: "甘，平",
+    channels: ["心", "肺", "脾", "胃"],
+    description: "调和诸药，应用极其广泛。",
+    efficacy: "补脾益气，清热解毒，祛痰止咳，缓急止痛，调和诸药。",
+    usage: "2~10g。",
+    contraindications: "不宜与海藻、京大戟、红大戟、甘遂、芫花同用。",
+    imageUrl: "/images/herbs/gancao.jpg"
+  },
+  {
+    id: 7,
+    name: "茯苓",
+    pinyin: "Fu Ling",
+    category: "利水渗湿药",
+    nature: "甘、淡，平",
+    channels: ["心", "肺", "脾", "肾"],
+    description: "利水渗湿，健脾，宁心。",
+    efficacy: "利水渗湿，健脾，宁心。",
+    usage: "10~15g。",
+    contraindications: "阴虚而无湿热、虚寒滑精、气虚下陷者慎服。",
+    imageUrl: "/images/herbs/fuling.jpg"
+  },
+  {
+    id: 8,
+    name: "川芎",
+    pinyin: "Chuan Xiong",
+    category: "活血化瘀药",
+    nature: "辛，温",
+    channels: ["肝", "胆", "心包"],
+    description: "为'血中之气药'，善行血中风气。",
+    efficacy: "活血行气，祛风止痛。",
+    usage: "3~10g。",
+    contraindications: "阴虚火旺，舌红口干者，及月经过多、出血性疾病者慎用。",
+    imageUrl: "/images/herbs/chuanxiong.jpg"
+  },
+  {
+    id: 9,
+    name: "金银花",
+    pinyin: "Jin Yin Hua",
+    category: "清热药",
+    nature: "甘，寒",
+    channels: ["肺", "心", "胃"],
+    description: "自古被誉为清热解毒的良药。",
+    efficacy: "清热解毒，疏散风热。",
+    usage: "6~15g。",
+    contraindications: "脾胃虚寒及气虚疮疡脓清者忌用。",
+    imageUrl: "/images/herbs/jinyinhua.jpg"
+  },
+  {
+    id: 10,
+    name: "陈皮",
+    pinyin: "Chen Pi",
+    category: "理气药",
+    nature: "苦、辛，温",
+    channels: ["肺", "脾"],
+    description: "理气健脾，燥湿化痰。",
+    efficacy: "理气健脾，燥湿化痰。",
+    usage: "3~10g。",
+    contraindications: "气虚体燥，阴虚燥咳，吐血及内有实热者慎服。",
+    imageUrl: "/images/herbs/chenpi.jpg"
+  }
+];
