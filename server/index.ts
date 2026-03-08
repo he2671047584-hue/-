@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
+// 删除这行：import { createServer as createViteServer } from 'vite';
 import dotenv from 'dotenv';
 import apiRoutes from './routes';
 
